@@ -28,11 +28,11 @@ In Egolt Project Publisher you can define different version of softwares that ar
 
 This product is fully support local calendars(if it defined in your language files) and also set right to left(RTL) and left to right(LTR) writing direction automatically for Persian and Arabic language users. Other main facilities of this product includes related downloads, project documentations and defining JED link.
 
-## No Support
-I make this project available free of charge to everyone in hope that it will be useful. However, I will not accept any feature requests, feature patches or support requests. Emails, GitHub Issues and Pull Requests containing any of these will be deleted / closed without reply. Thank you for your understanding.
-
 ## Setup
 You can install this project by downloading the zip file of repository and then using the Joomla! extension manager available in the Joomla! Administrator Control Panel.
+
+## No Support
+I make this project available free of charge to everyone in hope that it will be useful. However, I will not accept any feature requests, feature patches or support requests. Emails, GitHub Issues and Pull Requests containing any of these will be deleted / closed without reply. Thank you for your understanding.
 
 ## Open Source License
 
