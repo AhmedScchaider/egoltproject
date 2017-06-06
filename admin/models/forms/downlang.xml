@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general_attr" addfieldpath="/administrator/components/com_egoltproject/models/fields">
+		<field 
+			name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+		<field
+			name="download_id"
+			type="download"
+			label="COM_EGOLTPROJECT_DOWNLOAD"
+			description="COM_EGOLTPROJECT_DOWNLOAD"
+			default=""
+			class="inputbox"
+			required="true"
+			nounq="1"
+		/>
+		<field 
+			name="langfile" 
+			type="filemanager" 
+			directory="media/egoltproject/languages"
+			label="COM_EGOLTPROJECT_FILE"
+			size="40"
+			description="COM_EGOLTPROJECT_FILE_DESC" 
+			ftype="file"
+		/>
+		<field
+			name="lang_code"
+			type="language"
+			client="site"
+			default="en-GB"
+			label="COM_EGOLTPROJECT_SELECTLANG"
+			description="COM_EGOLTPROJECT_SELECTLANG"
+		/>
+		<field
+			name="user_id"
+			type="user"
+			label="COM_EGOLTPROJECT_TRANSLATOR"
+			description="COM_EGOLTPROJECT_TRANSLATOR"
+			required="true"
+		/>
+		<field
+			name="pubdate"
+			type="calendar"
+			label="COM_EGOLTPROJECT_PUBDATE"
+			description="COM_EGOLTPROJECT_PUBDATE"
+			size="22"
+			default=""
+			class="inputbox"
+			format="%Y-%m-%d %H:%M:%S"
+		/>
+		<field 
+			name="published" 
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			filter="intval"
+			size="1"
+			default="1"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>

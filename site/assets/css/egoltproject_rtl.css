@@ -1,0 +1,29 @@
+@charset "utf-8";
+/**
+ * @package   	Egolt Project Publisher
+ * @link 		http://www.egolt.com
+ * @copyright 	Copyright (C) Egolt www.egolt.com
+ * @author    	Soheil Novinfard
+ * @license    	GNU/GPL 2
+ *
+ * Name:			Egolt Project Publisher
+ * License:    		GNU/GPL 2
+ * Project Page: 	http://www.egolt.com/products/egoltproject
+ */
+ 
+.eg_side_col{
+	margin-left:0 !important;
+	margin-right:30px !important;
+}
+.eg-download .eg-legend .legend-title {
+    float: right;
+    right: 10px;
+	left:auto;
+}
+ul.eg-list li {
+    margin-left: 0;
+	margin-right: 8px;
+}
+ul.eg-list span.icon {
+	right: 0;
+}

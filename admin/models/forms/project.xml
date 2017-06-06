@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="lang_attr">
+		<field
+			name="title"
+			type="text"
+			label="COM_EGOLTPROJECT_TITLE"
+			description="COM_EGOLTPROJECT_TITLE"
+			size="40"
+			default=""
+			class="inputbox"
+			required="true"
+		/>
+		<field
+			name="elang"
+			type="language"
+			client="site"
+			default="en-GB"
+			label="COM_EGOLTPROJECT_SELECTLANG"
+			description="COM_EGOLTPROJECT_SELECTLANG"
+		/>
+		<field
+			name="intro"
+			type="editor"
+			label="COM_EGOLTPROJECT_INTRO"
+			description="COM_EGOLTPROJECT_INTRO"
+			filter="JComponentHelper::filterText"
+			default=""
+			class="inputbox"
+			required="true"
+			buttons="true"
+			hide="readmore,pagebreak"
+		/>
+		<field
+			name="fulltext"
+			type="editor"
+			label="COM_EGOLTPROJECT_FULLTEXT"
+			description="COM_EGOLTPROJECT_FULLTEXT"
+			filter="JComponentHelper::filterText"
+			default=""
+			class="inputbox"
+			hide="readmore"
+		/>
+	</fieldset>
+	<fieldset name="general_attr" addfieldpath="/administrator/components/com_egoltproject/models/fields">
+		<field 
+			name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+		<field
+			name="alias"
+			type="text"
+			label="COM_EGOLTPROJECT_ALIAS"
+			description="COM_EGOLTPROJECT_ALIAS"
+			size="40"
+			default=""
+			class="inputbox"
+			required="true"
+		/>
+		<field 
+			name="imageurl" 
+			type="filemanager" 
+			directory="media/egoltproject/projects"
+			label="COM_EGOLTPROJECT_IMAGE"
+			size="40"
+			description="COM_EGOLTPROJECT_IMAGE_DESC" 
+		/>
+		<field
+			name="jed"
+			type="text"
+			label="COM_EGOLTPROJECT_JED"
+			description="COM_EGOLTPROJECT_JED"
+			size="40"
+			default=""
+			class="inputbox"
+		/>
+		<field 
+			name="published" 
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			filter="intval"
+			size="1"
+			default="1"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="lang_attr">
+		<field
+			name="name"
+			type="text"
+			label="COM_EGOLTPROJECT_NAME"
+			description="COM_EGOLTPROJECT_NAME"
+			size="40"
+			default=""
+			class="inputbox"
+			required="true"
+		/>
+		<field
+			name="elang"
+			type="language"
+			client="site"
+			default="en-GB"
+			label="COM_EGOLTPROJECT_SELECTLANG"
+			description="COM_EGOLTPROJECT_SELECTLANG"
+		/>
+		<field
+			name="notes"
+			type="editor"
+			label="COM_EGOLTPROJECT_DESC"
+			description="COM_EGOLTPROJECT_DESC"
+			filter="JComponentHelper::filterText"
+			default=""
+			class="inputbox"
+			required="true"
+			buttons="true"
+			hide="readmore"
+		/>
+	</fieldset>
+	<fieldset name="general_attr" addfieldpath="/administrator/components/com_egoltproject/models/fields">
+		<field 
+			name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+		<field
+			name="alias"
+			type="text"
+			label="COM_EGOLTPROJECT_ALIAS"
+			description="COM_EGOLTPROJECT_ALIAS"
+			size="40"
+			default=""
+			class="inputbox"
+			required="true"
+		/>
+		<field name="published" type="list" label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC" class="inputbox"
+			filter="intval" size="1" default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>

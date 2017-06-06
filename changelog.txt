@@ -1,0 +1,83 @@
+1. Copyright and disclaimer
+---------------------------
+This application is open-source software released under the GPL.
+Copyright by Egolt - www.egolt.com .
+
+2. Change-log
+------------
+This is a non-exhaustive (but still near complete) change-log for
+Egolt Project Publisher, including beta and release candidate versions.
+Our thanks to all those people who've contributed bug reports and
+code fixes.
+
+Legend:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+B -> Back-end of component : administrator/components/com_egoltproject 
+F -> Front-end of component : components/com_egoltproject
+M -> Media files of component : media/egoltproject
+[LG] -> language code
+
+
+-------------------- 1.1 Stable Release [09-April-2012] ------------------
+
+
+ # Reviews link problem in control panel
+ Report	: [01-Apr-2012] Mohammad Hosseini Deljuyi
+ Fix	: [03-Apr-2012] Soheil Novinfard
+ Files	: B/views/egoltproject/tmpl/default.php
+ 
+ # language file submission not successful
+ Report	: [05-Apr-2012] Mehdi Niknami
+ Fix	: [05-Apr-2012] Soheil Novinfard
+ Files	: B/models/forms/downlang.xml
+ 
+ * Layouts Removed by some male-ware detesters
+ Report	: [31-Mar-2012] Mohammad Reza Shamimi
+ Fix	: [08-Apr-2012] Soheil Novinfard
+ Files	: B/views/about/tmpl/default.php
+		  B/helpers/egoltproject.php
+		  F/views/download/tmpl/default.php
+		  F/views/downloads/tmpl/default.php
+		  F/views/project/tmpl/default.php
+		  F/views/projects/tmpl/default.php
+		  F/controller.php  
+ 
+ + Add warning for empty licenses and compatibility drop-down list
+ Report	: [07-Apr-2012] Lotfi
+ Fix	: [08-Apr-2012] Soheil Novinfard
+ Files	: B/models/download.php
+		  administrator/language/[LG]/[LG].com_egoltproject.ini
+
+# projects view's box style problem
+ Report	: [07-Apr-2012] Soheil Novinfard
+ Fix	: [08-Apr-2012] Soheil Novinfard
+ Files	: F/views/projects/tmpl/default.php
+ 
+ # review's box style problem
+ Report	: [07-Apr-2012] Soheil Novinfard
+ Fix	: [08-Apr-2012] Soheil Novinfard
+ Files	: F/views/download/tmpl/default.php
+		  F/assets/css/egoltproject.css
+ 
+ + Add download hit to downloads view in admin
+ Report	: [01-Apr-2012] Soheil Novinfard
+ Fix	: [08-Apr-2012] Soheil Novinfard
+ Files	: B/views/downloads/tmpl/default.php 
+		  B/views/downloads/view.html.php
+		  B/models/downloads.php
+		  
+ + Add sample data in installation
+ Report	: [04-Apr-2012] Soheil Novinfard
+ Fix	: [08-Apr-2012] Soheil Novinfard
+ Files	: B/sql/install.sql 
+		  M/projects/egoltproject_big.png
+		  M/languages/test_lang.zip
+		  M/downloads/test.zip
+		  M/compats/j25.png

@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `#__egoltproject`;
+DROP TABLE IF EXISTS `#__egoltproject_lg`;
+DROP TABLE IF EXISTS `#__egoltproject_compats`;
+DROP TABLE IF EXISTS `#__egoltproject_compats_lg`;
+DROP TABLE IF EXISTS `#__egoltproject_downloads`;
+DROP TABLE IF EXISTS `#__egoltproject_downloads_lg`;
+DROP TABLE IF EXISTS `#__egoltproject_downloads_langs`;
+DROP TABLE IF EXISTS `#__egoltproject_licenses`;
+DROP TABLE IF EXISTS `#__egoltproject_licenses_lg`;
+DROP TABLE IF EXISTS `#__egoltproject_logs`;
+DROP TABLE IF EXISTS `#__egoltproject_reviews`;

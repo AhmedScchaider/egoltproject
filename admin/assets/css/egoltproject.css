@@ -1,0 +1,46 @@
+@charset "utf-8";
+/**
+ * @package   	Egolt Project Publisher
+ * @link 		http://www.egolt.com
+ * @copyright 	Copyright (C) Egolt www.egolt.com
+ * @author    	Soheil Novinfard
+ * @license    	GNU/GPL 2
+ *
+ * Name:			Egolt Project Publisher
+ * License:    		GNU/GPL 2
+ * Project Page: 	http://www.egolt.com/products/egoltproject
+ */
+ 
+.inner-about div {
+	background:#FFFFFF;
+}
+.adownload,
+.adocumentation,
+.ademo,
+.alicense,
+.aforum,
+.aversion
+{
+	padding:10px;
+	padding-right:40px;
+	border:1px solid #eaeaea;
+	margin:5px;
+	color:#777;
+}
+
+div .adownload { background: transparent url(../images/about-icons/icon-download.png) right center no-repeat;}
+div .adocumentation{background: transparent url(../images/about-icons/icon-documentation.png) right center no-repeat;}
+div .ademo {background: transparent url(../images/about-icons/icon-demo.png) right center no-repeat;}
+div .alicense{background: transparent url(../images/about-icons/icon-license.png) right center no-repeat;}
+div .aforum{background: transparent url(../images/about-icons/icon-forum.png) right center no-repeat;}
+div .aversion { background: transparent url(../images/about-icons/icon-version.png) right center no-repeat;}
+
+#cpanel div.icon {
+    margin-left: 5px !important;
+    margin-right: 0 !important;
+}
+
+.elogo {
+	float: right; 
+	margin: 10px;
+}

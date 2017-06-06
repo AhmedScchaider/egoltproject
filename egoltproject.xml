@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>com_egoltproject</name>
+	<creationDate>March 2012</creationDate>
+	<author>Soheil Novinfard</author>
+	<authorEmail>info@egolt.com</authorEmail>
+	<authorUrl>http://www.egolt.com</authorUrl>
+	<copyright>Copyright (c) Egolt. All rights reserved</copyright>
+	<license>GNU GPL v2.0 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>1.1</version>
+	<description>Egolt Project Manager</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+			<file driver="mysql">sql/install.sql</file>
+			<file driver="mysqli" charset="utf8">sql/install.sql</file>
+			<file driver="mysqli">sql/install.sql</file>
+
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+			<file driver="mysql">sql/uninstall.sql</file>
+			<file driver="mysqli" charset="utf8">sql/uninstall.sql</file>
+			<file driver="mysqli">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<media destination="egoltproject" folder="media">
+		<filename>index.html</filename>
+		<folder>compats</folder>
+		<folder>demos</folder>
+		<folder>downloads</folder>
+		<folder>languages</folder>
+		<folder>projects</folder>
+	</media>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>egoltproject.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>metadata.xml</filename>
+		<folder>assets</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+	<languages folder="site/languages">
+		<language tag="en-GB">en-GB.com_egoltproject.ini</language>
+		<language tag="fa-IR">fa-IR.com_egoltproject.ini</language>
+	</languages>
+	<administration>
+		<menu view="egoltproject" img="components/com_egoltproject/assets/images/icons/egoltproject_ico.png">COM_EGOLTPROJECT</menu>
+		<submenu>
+			<menu img="components/com_egoltproject/assets/images/icons/panel_ico.png" alt="COM_EGOLTPROJECT_CONTROLPANEL" view="egoltproject" link="option=com_egoltproject">COM_EGOLTPROJECT_CONTROLPANEL</menu>
+			<menu img="components/com_egoltproject/assets/images/icons/projects_ico.png" alt="COM_EGOLTPROJECT_PROJECTS" view="projects" link="option=com_egoltproject&amp;view=projects">COM_EGOLTPROJECT_PROJECTS</menu>
+			<menu img="components/com_egoltproject/assets/images/icons/downloads_ico.png" alt="COM_EGOLTPROJECT_DOWNLOADS" view="downloads" link="option=com_egoltproject&amp;view=downloads">COM_EGOLTPROJECT_DOWNLOADS</menu>
+			<menu img="components/com_egoltproject/assets/images/icons/downlangs_ico.png" alt="COM_EGOLTPROJECT_DOWNLANGS" view="downlangs" link="option=com_egoltproject&amp;view=downlangs">COM_EGOLTPROJECT_DOWNLANGS</menu>
+			<menu img="components/com_egoltproject/assets/images/icons/reviews_ico.png" alt="COM_EGOLTPROJECT_REVS" view="revs" link="option=com_egoltproject&amp;view=revs">COM_EGOLTPROJECT_REVS</menu>
+			<menu img="components/com_egoltproject/assets/images/icons/licenses_ico.png" alt="COM_EGOLTPROJECT_LICENSES" view="licenses" link="option=com_egoltproject&amp;view=licenses">COM_EGOLTPROJECT_LICENSES</menu>
+			<menu img="components/com_egoltproject/assets/images/icons/compats_ico.png" alt="COM_EGOLTPROJECT_COMPATS" view="compats" link="option=com_egoltproject&amp;view=compats">COM_EGOLTPROJECT_COMPATS</menu>
+			<menu img="components/com_egoltproject/assets/images/icons/about_ico.png" alt="COM_EGOLTPROJECT_ABOUT" view="about" link="option=com_egoltproject&amp;view=about">COM_EGOLTPROJECT_ABOUT</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>egoltproject.php</filename>
+			<filename>controller.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>sql</folder>
+			<folder>helpers</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin/languages">
+			<language tag="en-GB">en-GB.com_egoltproject.ini</language>
+			<language tag="en-GB">en-GB.com_egoltproject.sys.ini</language>
+			<language tag="fa-IR">fa-IR.com_egoltproject.ini</language>
+			<language tag="fa-IR">fa-IR.com_egoltproject.sys.ini</language>
+		</languages>
+	</administration>
+	<scriptfile>script.php</scriptfile>
+</extension>
